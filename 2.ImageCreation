@@ -28,16 +28,32 @@ through intergration with code hosting services like Github and Bitbucket
 
 Problem: After making some change 
 
-2.2.
-2.3
-2.4
-2.5
-2.6
-2.7
-2.8
-2.9
-2.10
-2.11
-2.12
+2.2. Saving Images and Containers as Tar Files for Sharing
+
+2.3 Writing Your First Dockerfile
+
+2.4 Packaging a Flask Application Inside a Container
+
+2.5 Optimizing Your Dockerfile by Following Best Practice
+
+2.6 Versioning an Images with Tags
+
+2.7 Migrating from Vagrant to Docker with the Docker Provider
+
+2.8 Using Packer to Create a Docker Image
+
+2.9 Publishing Your Image to Docker Hub
+
+2.10 Using ONBUILD Images
+
+2.11 Running a Private Registery
+
+2.12 Setting Up an Automated Build on docker hub for continuous Integration/Deployment
+
+2.13 Setting Up a Local Automated Build by Using a Git Hook and a Private Registry
+
+2.14 Using Conduit for Continuous Deployment
+
+
 
 
