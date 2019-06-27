@@ -1,26 +1,81 @@
-Installing Docker
+1/ Installing Docker
+  Install:
+    sudo apt-get update
+    sudo apt-get install -y wget
+    sudo wget -qO- https://get.docker.com/ | sh
+  Check:
+    sudo docker --version
+  Execute:
+    sudo service docker start/restart/stop
+  Add user ro the docker group:
+    sudo gpasswd -a <user> docker
 
-Starting a Docker Host in the Cloud by using Docker machine
+2/ Starting a Docker Host in the Cloud by using Docker machine
 
-Using DockerExperimental Binaries
 
-Running Hello World in Docker
+3/ Using DockerExperimental Binaries
 
-Running a Docker Container in Detached Mode
 
-Creating Starting Stopping and Removing Containers
+4/ Running Hello World in Docker
+  To show Docker command:
+    docker
+  List all running containers:
+    docker ps
+  Run a container
+    docker run <containername>
+  Containers are based on images. An image needs to be the docker tun command.
+  We can pulls images from a public registry.
+  
+  Remove image
+    docker rmi <imagename>
+    
+5/ Running a Docker Container in Detached Mode
+  
 
-Building a Docker Image with Dockerfile
+6/ Creating Starting Stopping and Removing Containers
 
-Using Supervisor to Run WordPress in a Single Container
+7/ Building a Docker Image with Dockerfile
+   Build your own Docker images using dockerfile - text file that describles the steps that Docker needs to take
+  to prepare an image
 
-Running a WordPress Blog Using Two Linked Containers
+    FROM <imagename>
+    ENV foo=bar
+    
+    Build new image
+      docker build -t <imagename> .
+      
+      docker images
+    
+    You launch a container based on it to check that the container has the environment variable foo set to bar:
+      docker run <imagename> env | grep foo
+  
+    
 
-Backing Up a Database Running in a Container
+8/ Using Supervisor to Run WordPress in a Single Container
 
-Sharing Data in Your Docker Host with Containers
 
-Sharing data between Containers
+9/ Running a WordPress Blog Using Two Linked Containers
 
-Copying Data to and from Containers
+10/ Backing Up a Database Running in a Container
+  Two main concepts with containers are that you can: 
+  - Execute a command inside a container running in the background
+  - Mount a host volume into the container
+
+11/ Sharing Data in Your Docker Host with Containers
+  You have data on your host that you would like to make avaiable in a container
+  $ ls 
+  $ docker run -ti -v "$PWD":/cookbook ubuntu:18.04 /bin/bash
+  --> mount the working directory in the host into the /cookbook directory in the container.
+  
+  $ ls  -l foobar
+  
+  $ docker inspect -f {{.Mounts}} <IDimage>
+  
+  
+12/ Sharing data between Containers
+
+13/ Copying Data to and from Containers
+
+  $ docker cp
+  
 
