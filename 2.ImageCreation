@@ -13,12 +13,58 @@ Introduction
 2.1 Keeping changes Madeto a container by committing to an Image 
 
 Problem: After making some change 
+$ docker run -t -i ubuntu:18.04 /bin/bash
+
+$ docker commit <container id> 
+
+$ docker commit 
+$ docker diff
 
 2.2. Saving Images and Containers as Tar Files for Sharing
 
+$ docker ps -a
+$ docker export <contaner id> > update.tar
+$ docker import - update < update.tar \\ create new image
+$ docker images \\ show images
+$ docker save -o update1.tar update
+$ ls -l
+$ docker rmi update
+$ docker load < update1.tar
+$ docker images
+
 2.3 Writing Your First Dockerfile
 
+$ docker build.
+$ docker images
+$ docker run <imageID>  Hi Docker!
+$ docker run <imageID>
+$ docker build -t cookbook:hello .
+$ docker images
+$ docker build -h
+
 2.4 Packaging a Flask Application Inside a Container
+
+    Dockerfile content:
+    FROM ubuntu:14.04
+        RUN apt-get update
+        RUN apt-get install -y python
+        RUN apt-get install -y python-pip
+        RUN apt-get clean all
+        
+        RUN pip install flask
+        
+        ADD hello.py /tmp/hello.py
+        
+        EXPOSE 5000
+        
+        CMD ["python", "/tmp/hello.py"]
+    
+$ docker  build -t flask .
+$ docker  images
+$ docker  run -d -P flask
+$ docker ps
+$ docker run -t -t -P flask /bin/bash
+        
 
 2.5 Optimizing Your Dockerfile by Following Best Practice
 
