@@ -1,29 +1,15 @@
 Introduction
-
-Create own container images
-
-Package an existing application
-
-Build a new one from scratch leveraging Docker
-
-
-Build Docker-file let Docker build the image automatically
-
-
-* Practices to opimize this Dockerfile 
-
-* Vagrant overview
-
-* Packer overview
-
-
-* Docker Hub - application store
-
-* Images on Docker Hub can be shared publicly and they can also be built automatically
-through intergration with code hosting services like Github and Bitbucket
-
-* Deploy your own Docker images registry and set up your own automated build
-
+    Create own container images
+    Package an existing application
+    Build a new one from scratch leveraging Docker
+    Build Docker-file let Docker build the image automatically
+    * Practices to opimize this Dockerfile 
+    * Vagrant overview
+    * Packer overview
+    * Docker Hub - application store
+    * Images on Docker Hub can be shared publicly and they can also be built automatically
+    through intergration with code hosting services like Github and Bitbucket
+    * Deploy your own Docker images registry and set up your own automated build
 2.1 Keeping changes Madeto a container by committing to an Image 
 
 Problem: After making some change 
