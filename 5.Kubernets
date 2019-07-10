@@ -1,0 +1,129 @@
+1/ Introduction
+Abbreviated as k8s - open source system started by Google to meet a requirement has arisen
+- an orchestration system - helps users a set of hosts (nodes) as a unified programmable reliable cluster
+
+  Enhenced Capabilities
+    Reliable container restart: monitor the health of a container and restart it when it fails
+    Self-heading: If node fails, k8s management system can automatically reschedule work onto healthy node.
+     Dynamic service membership  ensures that those new containers can be found and used
+     
+    High-cluster utilization    
+    Organization and grouping    
+    Horizontal scaling and replication    
+    Microservice friendly    
+    Streamlined Operations
+  
+  New Concepts
+    Cluster Scheduling: The process of placing a container on a specific node to optimize the reliability
+    and utilization of the cluster
+    Pods    : A group of containers that must be placed on a single node and work together as a team.
+    Allowing a set of containers to work closely together on a single node 
+    is a powerful way to make applications even more manageable.
+    Labels   :  
+    Replication controlles    
+    Network services
+    
+2/ Understanding Kubernetes Architecture
+  Problem
+  
+  Solution
+  
+  Discussion
+
+3/ Networking Pods for container Conectivity
+  Problem
+  
+  Solution
+  
+  Discussion
+  
+4/ Starting Containers on a KuBernetes Cluster with Pods
+  Problem
+  
+  Solution
+  
+  Discussion
+  
+5/ Tasking Advantage of Label for Querying Kubernetes Objects
+  Problem
+  
+  Solution
+  
+  Discussion
+  
+6/ Usinga Replication Controller to Manage the Number of Replicas of a Pod
+  Problem
+  
+  Solution
+  
+  Discussion
+
+7/ Running Multiple  Containers in a Pod
+  Problem
+  
+  Solution
+  
+  Discussion
+
+8/ Using Cluster IP services for Dynamic Linking of Container
+  Problem
+  
+  Solution
+  
+  Discussion
+
+9/ Creatimg a Single-Node Kubernetes CLuster Using Docker Compose
+  Problem
+  
+  Solution
+  
+  Discussion
+
+10/ Compiling Kubernetes to Create Your Own Release
+  Problem
+  
+  Solution
+  
+  Discussion
+
+11/ Starting Kubernetes Components with the hyperkuber Binary
+  Problem
+  
+  Solution
+  
+  Discussion
+
+12/ Exploring the Kubernets API
+  Problem
+  
+  Solution
+  
+  Discussion
+
+13/ Running the Kubernets DashBoard
+  Problem
+  
+  Solution
+  
+  Discussion
+
+14/ Upgrading from an Old API Version
+  Problem
+  
+  Solution
+  
+  Discussion
+
+15/ Configuring Authentication to a Kubernetes Cluster
+  Problem
+  
+  Solution
+  
+  Discussion
+
+16/ Configuring the Kubernetes Client to Access Remote Cluster
+  Problem
+  
+  Solution
+  
+  Discussion
